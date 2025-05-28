@@ -1,0 +1,332 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: pink; 
+    overflow-x: hidden;
+}
+
+section{
+    height: 50vh;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: clamp(1rem, 4vw, 50rem);
+    color: white;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: -0.02em;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/mario_e_luigi_82436_empty_street_only_one_man_standing_with_a_k_c18212c9-2620-4d21-b921-ad9272e49374.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bigTypo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(1rem, 17vw, 15rem);
+    color: white;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: -0.05em;
+    mix-blend-mode: exclusion;
+    margin-left: -0.75vw;
+    margin-top: 0vw;
+
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+/* SEGUNDA SECCION */
+
+.firstFrame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+    padding: 0 5vw; /* Espaciado horizontal interno */
+    box-sizing: border-box;
+}
+.textFirstFrame {
+    color: rgb(204, 195, 195);
+    font-family: Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+    max-width: 100%;
+}
+.catImage {
+    height: 650px;
+    object-fit: contain;
+    padding-bottom: 30vh;
+}
+
+
+/* TERCERA SECCION */
+
+.gordito{
+    background-image: url("../img/j.loslo_whining_fat_man_with_an_orange_face_--profile_mr6ct5j_-_6b7f8d1a-9db8-4816-b70f-616be26fa39c.png");
+    background-size: 100%;
+    background-position: 0vh;
+    background-position: -550px -350px;
+    filter: grayscale(100%);
+}
+.gorditoTexto {
+    font-family: Arial, sans-serif;
+    font-size: 8rem; 
+    font-weight: bold;
+    color: white;
+    line-height: 0.8;
+    text-align: right;
+    padding-left: 800px;
+}
+.highlight {
+    color: black;
+}
+
+
+/* CUARTA SECCION */
+
+.calavera {
+    background:
+        linear-gradient(rgba(255, 0, 136, 0.6), rgba(255, 0, 136, 0.6)),
+        url(../img/adehenne_A_close-up_of_an_anatomical_medical_oil_painting_in_be_3c6b8c05-bfc9-4c0b-a2e1-e30de5a4f4bb\(1\).png);
+    background-size: 80%;
+    background-position: center 10%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.calavera-text {
+    font-family: Arial, sans-serif;
+    font-size: 11rem;
+    font-weight: bold;
+    color: white;
+    line-height: 0.8;
+    z-index: 2;
+    max-width: 80%;
+    text-align: left;
+    transform: translateX(-3vw);
+}
+.bold-black {
+    color: black;
+}
+.calavera-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(0) scaleX(-1); 
+    height: 90%;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+
+/* QUINTA SECCION */
+
+.araña-extraña{
+    background-image: url('../img/lallish0101_a_abnormal_creature_in_a_random_enviorment_cinemati_16c2228a-82fc-40d6-ad45-222afcc352ef.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 53%;
+    overflow: hidden;
+}
+.araña-text{
+    font-family: Arial, sans-serif;
+    font-size: 11rem;
+    font-weight: bold;
+    color: white;
+    line-height: 0.8;
+    text-align: right;
+    padding-left: 430px; 
+    z-index: 1;
+    transform: translateX(11vw);
+}
+.gatorandom-img {
+    position: absolute;
+    bottom: -200vh;
+    left: 0;
+    height: 55%;
+    transform: scaleX(-1); 
+    z-index: 0;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+
+/* SEXTA SECCION */
+
+.gusano{
+    background-image: url(../img/livlaughing_tardigrade_--ar_613_--profile_sroib9s_--v_7_13480d24-a8ba-42aa-808e-75e8c64dfd55.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+}
+
+
+/* SEPTIMA SECCION */
+
+.pulpo{
+    background-image: url(../img/tobiastarland_78017_Octopus_full_body_total_view._Charcoal_wild_ac8d35f7-0e9b-43db-8185-b80070e2c9e1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    height: 70vh;
+
+    position: relative;
+    overflow: hidden;
+}
+.pulpo-text{
+    font-family: Arial, sans-serif;
+    font-size: 21rem;
+    font-weight: bold;
+    line-height: 0.8;
+    transform: translateX(2vw); 
+    position: absolute;
+    top: 0;
+    right: 0px;
+    text-align: right;
+    z-index: 2;
+    width: 300%;
+}
+.pulpo-text-bottom{
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    text-align: right;
+    z-index: 2;
+}
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+
+
+/* OCTAVA SECCION */
+
+.imagenes {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 2rem;
+    height: 70vh;
+  }
+  
+  .card {
+    width: 500px;
+    color: black;
+    font-family: Arial, sans-serif;
+    transform: translateX(-20px); 
+  }
+  
+  .card img {
+    width: 100%; 
+    height: 300px;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .card h2 {
+    font-size: 4rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* NOVENA SECCION */
+
+.aboutus {
+    background-color: black;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    height: auto; /* Evita recortar contenido, ajusta según necesidad */
+  }
+  
+  .perfil-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+  }
+  
+  .perfil-card img {
+    width: 200px;   /* antes era 80px */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .perfil-card p {
+    font-size: 1rem;
+    color: white; /* Para que se vea sobre fondo negro */
+    margin: 0;
+  }
+  
+
+
+/* DECIMA SECCION */
+
+.voldemort{
+    background-image: url('../img/aldarion109_nosferatu_angel_Albumen_print_--ar_45_--v_7_d7a4aa74-d6c8-4041-bf81-3c330d354fb9.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    height: auto;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    color: white;
+    height: 25vh;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    color: #ccc;
+}
+
