@@ -295,35 +295,55 @@ section{
 
 .aboutus {
     background-color: black;
-    padding: 2rem;
+    padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 2rem;
-    justify-content: center;
-    align-content: center;
-    height: auto; /* Evita recortar contenido, ajusta según necesidad */
+    justify-items: center;
+    align-content: start;
+    height: 60vh;
   }
   
   .perfil-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    max-width: 500px;
+    display: flex;            
+    flex-direction: row;      /* Imagen a la izquierda, texto a la derecha */
+    align-items: flex-start;  /* Alinea la parte superior de imagen y texto */
+    gap: 1rem;                /* Espacio entre la imagen y el bloque de texto */
+    max-width: 800px;         /* Ajusta según diseño */
+    /* Puedes añadir padding o background si deseas: */
+    /* padding: 1rem; */
+    /* background-color: #111; */
   }
   
   .perfil-card img {
-    width: 200px;   /* antes era 80px */
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
+    width: 1000px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
   }
   
-  .perfil-card p {
-    font-size: 1rem;
-    color: white; /* Para que se vea sobre fondo negro */
+  .perfil-texto {
+    display: flex;
+    flex-direction: column;   /* Apila <h6> encima de <p> */
+    align-items: flex-start;  /* Alinea el texto a la izquierda dentro del bloque */
+    gap: 0.5rem;              /* Separación entre título y párrafo */
+  }
+  
+  .perfil-texto h6 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
     margin: 0;
   }
+  
+  .perfil-texto p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  
   
 
 
